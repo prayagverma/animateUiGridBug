@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .btn-wrp {
+            height: 50px;
+            width: 100%;
+        }
+        .btn {
+            background: cadetblue;
+            height: 50px;
+            color: white;
+            float: left;
+            margin-left: 20px;
+            cursor: pointer;
+            line-height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .btn:hover {
+            background: #93C5C7;
+        }
+
+        .block {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="btn-wrp">
+    <div ui-sref="test" class="btn">WITHOUT grid state</div>
+    <div ui-sref="grid" class="btn">WITH grid state</div>
+</div>
+<div ui-view class="block"></div>
+
+<!-- Angular -->
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-animate/angular-animate.js"></script>
+<script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!-- lazyload -->
+<script src="libs/oclazyload/dist/ocLazyLoad.js"></script>
+
+
+<script src="app.js"></script>
+<script src="config.lazyload.js"></script>
+<script src="config.router.js"></script>
+
+</body>
+</html>
