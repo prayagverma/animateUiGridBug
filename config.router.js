@@ -6,7 +6,7 @@ angular.module('app')
             function ($stateProvider, $urlRouterProvider, JQ_CONFIG, MODULE_CONFIG) {
 
                 $urlRouterProvider
-                    .otherwise('/grid');
+                    .otherwise('/test');
 
                 $stateProvider
                     .state('test', {
